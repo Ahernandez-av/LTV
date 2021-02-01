@@ -29,3 +29,16 @@ footer,header,hgroup,menu,nav,section {
   padding: 0;
   margin: 0;
 }
+
+/* CUSTOM STYLES */
+.form__error {
+  display: none;
+}
+
+.input--error {
+  border: 1px solid red;
+}
+
+.show {
+  display: block;
+}
