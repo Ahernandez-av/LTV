@@ -42,3 +42,7 @@ footer,header,hgroup,menu,nav,section {
 .show {
   display: block;
 }
+
+.hide {
+  display: none;
+}

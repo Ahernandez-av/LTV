@@ -3,15 +3,17 @@ const input = document.querySelector('#form__input')
 const error = document.querySelector('.form__error')
 
 function showError(event){
-  event.preventDefault();
   input.classList.add('input--error');
   error.classList.add('show');
 }
 
 function handleForm(event){
+  event.preventDefault();
+  
   if(input.value != ""){
     if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(input.value)){
-      return true;
+      localStorage.setItem("searchQuery", input.value)
+      window.location.replace("../../result.html");
     } else {
       showError(event);
     }
