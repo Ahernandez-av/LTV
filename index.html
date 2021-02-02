@@ -8,46 +8,125 @@
 </head>
 <body>
   <header>
-    <div class="header__brand">
-      <a href="/">
-        <img src="./assets/images/Logo.svg" alt="Company Logo">
-      </a>
-      <p>Company Logo</p>
-    </div>
-    <div class="header__items">
-      <a href="#" class="header__items__search">
-        <img src="./assets/images/icn_search.svg" alt="">
-      </a>
-      <a href="#" class="header__items__user">
-        <img src="./assets/images/icn_person.svg" alt="">
-      </a>
+    <div class="wrapper d-flex justify-content-between">
+      <div class="header__brand">
+        <a href="/">
+          <img src="./assets/images/Logo.svg" alt="Company Logo">
+        </a>
+      </div>
+      <div class="header__items">
+        <a href="#" class="header__items__search">
+          <img src="./assets/images/icn_search.svg" alt="">
+        </a>
+        <a href="#" class="header__items__user">
+          <img src="./assets/images/icn_person.svg" alt="">
+        </a>
+      </div>
     </div>
   </header>
   <main>
+
     <section class="search">
-      <h1>Search Any Email Address</h1>
-      <p><span>Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</p>
-      <form id="search__form">
-        <div>
-          <label for="search"></label>
-          <input type="text" name="search" id="form__input">
-          <p class="form__error">Please add a valid email address</p>
-        </div>
-        <button id="form__send">Go!</button>
-      </form>
-      <p><img src="./assets/images/lock.svg" alt=""> Enter Any Email Adress. They won't be notified.</p>
+      <div class="wrapper">
+        <h1 class="search__title">Search Any Email Address</h1>
+        <p class="search__subtitle"><span class="secondary-text">Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</p>
+        <form id="search__form" class="d-flex">
+          <div class="form__container d-flex flex-column">
+            <label for="search"></label>
+            <input type="text" name="search" id="form__input" placeholder="EMAIL">
+            <div>
+              <p class="form__error">Please add a valid email address</p>
+            </div>
+          </div>
+          <button id="form__send" class="btn-search">GO!</button>
+        </form>
+        <p class="search__footer secondary-text"><img src="./assets/images/lock.svg" alt=""> Enter Any Email Adress. They won't be notified.</p>
+      </div>
     </section>
+    
     <section class="body">
-      <h2>Reverse Email Lookup</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+      <div class="wrapper">
+        <h2>Reverse Email Lookup</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+      </div>
+      <div class="points d-flex flex-wrap">
+
+        <div class="point d-flex">
+          <div class="point__left">
+            <div class="b-circle">
+              <p>1</p>
+            </div>
+          </div>
+          <div class="point__right d-flex flex-column">
+            <h4>Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="point d-flex">
+          <div class="point__left">
+            <div class="b-circle">
+              <p>2</p>
+            </div>
+          </div>
+          <div class="point__right d-flex flex-column">
+            <h4>Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="point d-flex">
+          <div class="point__left">
+            <div class="b-circle">
+              <p>3</p>
+            </div>
+          </div>
+          <div class="point__right d-flex flex-column">
+            <h4>Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="point d-flex">
+          <div class="point__left">
+            <div class="b-circle">
+              <p>4</p>
+            </div>
+          </div>
+          <div class="point__right d-flex flex-column">
+            <h4>Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="point d-flex">
+          <div class="point__left">
+            <div class="b-circle">
+              <p>5</p>
+            </div>
+          </div>
+          <div class="point__right d-flex flex-column">
+            <h4>Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="point d-flex">
+          <div class="point__left">
+            <div class="b-circle">
+              <p>6</p>
+            </div>
+          </div>
+          <div class="point__right d-flex flex-column">
+            <h4>Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+
+      </div>
     </section>
   </main>
-  <footer>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-    <div>
-      <p><a href="">Terms</a> | <a href="">Privacy</a></p>
-    </div>
+
+  <footer class="d-flex justify-content-between align-items-center">
+    <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    <p class="footer__links"><a href="#">Terms</a> | <a href="#">Privacy</a></p>
   </footer>
+
   <script src="./assets/js/search.js"></script>
 </body>
 </html>

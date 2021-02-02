@@ -25,19 +25,226 @@ footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
+ol, ul {
+	list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 
-/* CUSTOM STYLES */
-.form__error {
-  display: none;
+textarea:focus, input:focus{
+  outline: none;
 }
 
-.input--error {
-  border: 1px solid red;
+/* BASE STYLES */
+html {
+  font-size: 10px;
 }
+
+body {
+  font-size: 1.2rem;
+  font-family: Helvetica, Neue-Bold;
+  background-color: #F8F8F8;
+}
+
+p {
+  font-size: 2.4rem;
+}
+
+h1 {
+  font-size: 5.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-size: 5.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #004A80;
+  line-height: 7rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  color: #004A80;
+  font-weight: 700;
+}
+
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+  background-color: #004A80;
+  padding: 2rem 0;
+}
+
+.header__brand img {
+  width: 17.3rem;
+  height: 2.5rem;
+}
+
+.header__items img:nth-child(1) {
+  margin-left: 2rem;
+}
+
+/* SEARCH */
+
+.search {
+  background-color: #004A80;
+  color: #fff;
+}
+
+.search__title {
+  padding-top: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.search__subtitle {
+  font-size: 2.4rem;
+  text-align: center;
+  line-height: 2.9rem;
+  margin-bottom: 2.9rem;
+}
+
+#search__form {
+  margin-bottom: 3rem;
+}
+
+.form__container {
+  width: 100%;
+}
+
+#form__input {
+  height: 100%;
+  height: 7rem;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 4px 0 rgba(0,0,0,0.20);
+  padding-left: 1.2rem;
+  font-family: Helvetica, Neue-Bold;
+  font-size: 1.6rem;
+  border: none;
+}
+
+::placeholder {
+  color: #9B9B9B;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+}
+
+#form__input.input--error {
+  border: 3px solid red;
+  border-radius: 3px 3px 3px 0;
+}
+
+#form__send {
+  width: 18rem;
+  margin-left: 2rem;
+  height: 7rem;
+  border-radius: 3px;
+  border: none;
+}
+
+.search__footer {
+  text-align: left;
+  font-size: 1.6rem;
+  padding-bottom: 9.5rem;
+}
+
+.search__footer img {
+  margin-right: 1.5rem;
+}
+
+.form__error {
+  display: none;
+  font-size: 1.6rem;
+  padding: .7rem 1.2rem;
+  background-color: #DC0015;
+}
+
+.show--error {
+  display: inline-block;
+}
+
+/* BODY */
+
+.body {
+  background-image: linear-gradient(0deg, #E6E6E6 0%, #FFFFFF 100%);
+}
+
+.body h2 {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.body p {
+  font-size: 2.2rem;
+  color: #4A4A4A;
+  line-height: 3rem;
+}
+
+.points {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.points .point:nth-child(odd){
+  padding-right: 6rem;
+  padding-left: 0;
+}
+
+.point {
+  width: 50%;
+  padding-left: 6rem;
+  margin-bottom: 3rem;
+}
+
+.point__right p {
+  font-size: 1.8rem;
+  margin-top: .8rem;
+}
+
+.point .b-circle {
+  height: 9rem;
+  width: 9rem;
+  margin-right: 2rem;
+}
+
+/* FOOTER */
+
+footer {
+  margin: 1.4rem 13rem;
+}
+
+.footer__text {
+  width: 70%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #999;
+}
+
+.footer__links {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #004A80;
+  text-decoration: none;
+}
+
+/* MISC */
 
 .show {
   display: block;
@@ -45,4 +252,49 @@ footer,header,hgroup,menu,nav,section {
 
 .hide {
   display: none;
+}
+
+.b-circle {
+  background-color: #004A80;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.b-circle p {
+  font-weight: 700;
+  color: #F6BC25;
+  font-size: 4.8rem;
+}
+
+.secondary-text {
+  color: #F6BC25;
+  font-weight: 700;
+}
+
+.btn-search {
+  background-image: linear-gradient(225deg, #F2DA56 0%, #F6BC25 100%);
+  box-shadow: 0 3px 0 0 #A6953B, inset 0 1px 0 0 #FFFFFF;
+  color: #004A80;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.btn-search:hover {
+  background: #F2DA56;
+  box-shadow: 0 3px 0 0 #A6953B, inset 0 1px 0 0 #FFFFFF;
+}
+
+.btn-search:active {
+  background: #F6BC25;
+  box-shadow: 0 3px 0 0 #A6953B, inset 0 1px 0 0 #FFFFFF;
+}
+
+@media(max-width: 1200px){
+
+}
+
+@media(max-width: 600px){
+  
 }

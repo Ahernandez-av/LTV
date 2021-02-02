@@ -4,7 +4,7 @@ const error = document.querySelector('.form__error')
 
 function showError(event){
   input.classList.add('input--error');
-  error.classList.add('show');
+  error.classList.add('show--error');
 }
 
 function handleForm(event){
