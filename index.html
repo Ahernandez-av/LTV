@@ -7,42 +7,49 @@
   <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
-  <header>
-    <div class="wrapper d-flex justify-content-between">
-      <div class="header__brand">
-        <a href="/">
-          <img src="./assets/images/Logo.svg" alt="Company Logo">
-        </a>
+  <div id="blue">
+    <header>
+      <div class="wrapper d-flex justify-content-between">
+        <div class="header__brand">
+          <a href="/">
+            <img src="./assets/images/Logo.svg" alt="Company Logo">
+          </a>
+        </div>
+        <div class="header__items">
+          <a href="#" class="header__items__search">
+            <img src="./assets/images/icn_search.svg" alt="">
+          </a>
+          <a href="#" class="header__items__user">
+            <img src="./assets/images/icn_person.svg" alt="">
+          </a>
+        </div>
       </div>
-      <div class="header__items">
-        <a href="#" class="header__items__search">
-          <img src="./assets/images/icn_search.svg" alt="">
-        </a>
-        <a href="#" class="header__items__user">
-          <img src="./assets/images/icn_person.svg" alt="">
-        </a>
-      </div>
-    </div>
-  </header>
-  <main>
-
-    <section class="search">
-      <div class="wrapper">
-        <h1 class="search__title">Search Any Email Address</h1>
-        <p class="search__subtitle"><span class="secondary-text">Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</p>
-        <form id="search__form" class="d-flex">
-          <div class="form__container d-flex flex-column">
-            <label for="search"></label>
-            <input type="text" name="search" id="form__input" placeholder="EMAIL">
-            <div>
-              <p class="form__error">Please add a valid email address</p>
+    </header>
+    <main>
+  
+      <section class="search">
+        <div class="wrapper">
+          <h1 class="search__title">Search Any Email Address</h1>
+          <p class="search__subtitle"><span class="secondary-text">Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</p>
+          <form id="search__form" class="d-flex">
+            <div class="form__container d-flex flex-column">
+              <label for="search"></label>
+              <input type="text" name="search" id="form__input" placeholder="EMAIL">
+              <div>
+                <p class="form__error">Please add a valid email address</p>
+              </div>
             </div>
+            <button id="form__send" class="btn-search">GO!</button>
+          </form>
+          <div class="d-flex align-items-center search__footer">
+            <div>
+              <img src="./assets/images/lock.svg" alt="">
+            </div>
+            <p class="secondary-text">Enter Any Email Adress. They won't be notified.</p>
           </div>
-          <button id="form__send" class="btn-search">GO!</button>
-        </form>
-        <p class="search__footer secondary-text"><img src="./assets/images/lock.svg" alt=""> Enter Any Email Adress. They won't be notified.</p>
-      </div>
-    </section>
+        </div>
+      </section>
+  </div>
     
     <section class="body">
       <div class="wrapper">

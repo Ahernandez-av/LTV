@@ -50,8 +50,8 @@ html {
 
 body {
   font-size: 1.2rem;
-  font-family: Helvetica, Neue-Bold;
-  background-color: #F8F8F8;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 p {
@@ -69,7 +69,6 @@ h2 {
   font-weight: 700;
   text-align: center;
   color: #004A80;
-  line-height: 7rem;
 }
 
 h4 {
@@ -83,10 +82,13 @@ h4 {
   margin: 0 auto;
 }
 
+#blue {
+  background-color: #004A80;
+}
+
 /* HEADER */
 
 header {
-  background-color: #004A80;
   padding: 2rem 0;
 }
 
@@ -102,7 +104,6 @@ header {
 /* SEARCH */
 
 .search {
-  background-color: #004A80;
   color: #fff;
 }
 
@@ -158,9 +159,12 @@ header {
 }
 
 .search__footer {
+  padding-bottom: 9.5rem;
+}
+
+.search__footer p {
   text-align: left;
   font-size: 1.6rem;
-  padding-bottom: 9.5rem;
 }
 
 .search__footer img {
@@ -293,8 +297,135 @@ footer {
 
 @media(max-width: 1200px){
 
+  h1, h2 {
+    font-size: 4.8rem;
+  }
+
+  h4 {
+    font-size: 2.0rem;
+  }
+
+  p {
+    font-size: 2.0rem;
+    line-height: 2.4rem;
+  }
+
+  .wrapper {
+    margin: 0 2.5rem;
+  }
+
+  .search__footer {
+    padding-bottom: 6rem;
+  }
+
+  .body p {
+    font-size: 2.0rem;
+  }
+
+  .point__right p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .b-circle p {
+    font-size: 3.4rem;
+  }
+
+  .points {
+    margin: 0 2.5rem;
+  }
+
+  .point {
+    padding: 0;
+  }
+
+  .points .point:nth-child(odd){
+    padding-right: 2.4rem;
+    padding-left: 0;
+  }
+  
+  footer {
+    margin: 1.4rem 2.5rem;
+  }
+
+  .footer__text {
+    width: 80%;
+  }
 }
 
 @media(max-width: 600px){
+  h1, h2 {
+    font-size: 3.8rem;
+  }
+
+  .search__title {
+    padding-top: 1rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  #form__input {
+    width: 100%;
+  }
   
+  #form__send {
+    width: 100%;
+    margin: 1rem 0 0 0;
+  }
+
+  #search__form {
+    flex-direction: column;
+  }
+
+  .search__footer {
+    padding-bottom: 4rem;
+  }
+
+  .show--error {
+    display: block;
+  }
+
+  .body p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .point {
+    width: 100%;
+  }
+
+  .points {
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  .points .point:nth-child(odd){
+    padding: 0;
+  }
+
+  .point .b-circle {
+    height: 5rem;
+    width: 5rem;
+    margin-right: 1rem;
+  }
+
+  .b-circle p {
+    font-size: 2.7rem;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .footer__text {
+    width: 100%;
+  }
+
+  .footer__links {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+  }
 }
