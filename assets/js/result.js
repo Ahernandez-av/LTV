@@ -49,7 +49,7 @@ function searchEmail(email){
     .then(data => data.json())
     .then(res => {
       spinner.classList.add("hide")
-      console.log(res)
+
       if(res.first_name){
 
         result.appendChild(e);
@@ -60,7 +60,8 @@ function searchEmail(email){
 
         res.phone_numbers.map(elm => {
           const nodeElement = document.createElement('li')
-          nodeElement.innerHTML = `${elm}`
+          const newNumber = `(${elm.substring(0,3)}) ${elm.substring(3,6)}-${elm.substring(6,10)}`
+          nodeElement.innerHTML = `${newNumber}`
           document.querySelector('.card__numbers__elements').appendChild(nodeElement);
         })
 
