@@ -10,7 +10,7 @@ let searchQuery = sessionStorage.getItem("searchQuery");
 //result element
 const e = document.createElement('div')
 e.innerHTML = `
-  <div class="person d-flex">
+  <div class="search-card d-flex">
     <div class="card__image">
       <div class="b-circle">
         <img src="./assets/images/icn_person.svg" alt="test">

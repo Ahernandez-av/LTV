@@ -18,7 +18,7 @@
 }
 
 /* PERSON */
-.person {
+.search-card {
   margin: 3rem 0 0 0;
   padding: 4rem;
   background: #FFFFFF;
@@ -27,7 +27,7 @@
   border-radius: 30px;
 }
 
-.person .b-circle {
+.search-card .b-circle {
   margin-right: 2rem;
 }
 
@@ -36,7 +36,7 @@
   height: 4.6rem;
 }
 
-.person p {
+.search-card p {
   font-size: 1.8rem;
   margin-top: .5rem;
   line-height: 2.6rem;
@@ -60,7 +60,7 @@
   margin-bottom: 2rem;
 }
 
-.person ul {
+.search-card ul {
   margin-top: .5rem;
   font-size: 1.8rem;
   line-height: 2.6rem;
@@ -72,7 +72,7 @@
 
 @media(max-width: 1200px){
 
-  .person p {
+  .search-card p {
     font-size: 1.6rem;
   }
 }
@@ -90,7 +90,7 @@
             flex-direction: column;
   }
 
-  .person {
+  .search-card {
     margin: 1.5rem 0;
     padding: 2.5rem 1.5rem;
   }
