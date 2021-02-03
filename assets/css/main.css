@@ -1,3 +1,14 @@
+/* 
+*
+* For the styles I used the BEM Methodology and I organize the styles in a modular way.
+* I like to work with styled components, to keep the code clean.
+*
+* reset.css
+*  base.css => general styles 
+*  modules => main section of the page
+*
+*/
+
 @import "reset.css";
 @import "base.css";
 @import "modules/header.css";
