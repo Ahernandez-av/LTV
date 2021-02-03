@@ -1,0 +1,45 @@
+footer {
+  margin: 1.4rem 13rem;
+}
+
+.footer__text {
+  width: 70%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #999;
+}
+
+.footer__links {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #004A80;
+  text-decoration: none;
+}
+
+@media(max-width: 1200px){
+  
+  footer {
+    margin: 1.4rem 2.5rem;
+  }
+
+  .footer__text {
+    width: 80%;
+  }
+}
+
+@media(max-width: 600px){
+
+  footer {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .footer__text {
+    width: 100%;
+  }
+
+  .footer__links {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+  }
+}

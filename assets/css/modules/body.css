@@ -1,0 +1,112 @@
+/* BODY */
+
+.body {
+  background-image: linear-gradient(0deg, #E6E6E6 0%, #FFFFFF 100%);
+}
+
+.body h2 {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.body p {
+  font-size: 2.2rem;
+  color: #4A4A4A;
+  line-height: 3rem;
+}
+
+.points {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.points .point:nth-child(odd){
+  padding-right: 6rem;
+  padding-left: 0;
+}
+
+.point {
+  width: 50%;
+  padding-left: 6rem;
+  margin-bottom: 3rem;
+}
+
+.point__right p {
+  font-size: 1.8rem;
+  margin-top: .8rem;
+}
+
+.point .b-circle {
+  margin-right: 2rem;
+}
+
+.b-circle p {
+  font-weight: 700;
+  color: #F6BC25;
+  font-size: 4.8rem;
+}
+
+@media(max-width: 1200px){
+
+  .body p {
+    font-size: 2.0rem;
+  }
+
+  .point__right p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .b-circle p {
+    font-size: 3.4rem;
+  }
+
+  .points {
+    margin: 0 2.5rem;
+  }
+
+  .point {
+    padding: 0;
+  }
+
+  .points .point:nth-child(odd){
+    padding-right: 2.4rem;
+    padding-left: 0;
+  }
+}
+
+@media(max-width: 600px){
+
+  .body p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .point {
+    width: 100%;
+  }
+
+  .points {
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  .points .point:nth-child(odd){
+    padding: 0;
+  }
+
+  .b-circle {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .point .b-circle {
+    margin-right: 1rem;
+  }
+
+  .b-circle p {
+    font-size: 2.7rem;
+  }
+}
