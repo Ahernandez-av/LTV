@@ -7,26 +7,30 @@ const result = document.querySelector(".result");
 const e = document.createElement('div')
 
 e.innerHTML = `
-<div>
-  <div>
-    <img src="./assets/images/icn_person.svg" alt="test">
+<div class="person d-flex">
+  <div class="card__image">
+    <div class="b-circle">
+      <img src="./assets/images/icn_person.svg" alt="test">
+    </div>
   </div>
   <div>
     <div class="card__header">
     </div>
-    <div class="card__details">
-      <div class="card__address">
+    <div class="card__details d-flex flex-wrap">
+      <div class="card__element">
         <h4>Address</h4>
+        <p class="card__address__elements"></p>
       </div>
-      <div class="card__numbers">
+      <div class="card__element">
         <h4>Phone Numbers</h4>
         <ul class="card__numbers__elements">
         </ul>
       </div>
-      <div class="card__Email">
+      <div class="card__element">
         <h4>Email</h4>
+        <p class="card__email__elements"></p>
       </div>
-      <div class="card__relatives">
+      <div class="card__element">
         <h4>Relatives</h4>
         <ul class="card__relatives__elements">
         </ul>
@@ -46,13 +50,13 @@ function searchEmail(email){
     .then(res => {
       spinner.classList.add("hide")
       console.log(res)
-      if(res){
+      if(res.first_name){
 
         result.appendChild(e);
 
-        document.querySelector('.card__header').innerHTML = `<h2>${res.first_name} ${res.last_name}</h2><p>${res.description}</p>`;
-        document.querySelector('.card__address').innerHTML = `<p>${res.address}</p>`;
-        document.querySelector('.card__email').innerHTML = `<p>${res.email}</p>`;
+        document.querySelector('.card__header').innerHTML = `<h3>${res.first_name} ${res.last_name}</h3><p>${res.description}</p>`;
+        document.querySelector('.card__address__elements').innerHTML = `${res.address}`;
+        document.querySelector('.card__email__elements').innerHTML = `${res.email}`;
 
         res.phone_numbers.map(elm => {
           const nodeElement = document.createElement('li')
@@ -66,10 +70,13 @@ function searchEmail(email){
           document.querySelector('.card__relatives__elements').appendChild(nodeElement);
         })
 
+        title.innerHTML = "1 result"
+        subtitle.innerHTML = "Look at the result below to see the details of the person you're searched for."
+
       } else {
         
         title.innerHTML = "0 results"
-        subtitle.innerHTML = "Try strating a new search below"
+        subtitle.innerHTML = "Try starting a new search below"
       }
     })
     .catch(err => console.log(err))

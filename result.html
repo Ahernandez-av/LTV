@@ -8,36 +8,69 @@
 </head>
 <body>
   <header>
-    <div class="header__brand">
-      <a href="/">
-        <img src="./assets/images/Logo.svg" alt="Company Logo">
-      </a>
-      <p>Company Logo</p>
-    </div>
-    <div class="header__items">
-      <a href="#" class="header__items__search">
-        <img src="./assets/images/icn_search.svg" alt="">
-      </a>
-      <a href="#" class="header__items__user">
-        <img src="./assets/images/icn_person.svg" alt="">
-      </a>
+    <div class="wrapper d-flex justify-content-between">
+      <div class="header__brand">
+        <a href="/">
+          <img src="./assets/images/Logo.svg" alt="Company Logo">
+        </a>
+      </div>
+      <div class="header__items">
+        <a href="#" class="header__items__search">
+          <img src="./assets/images/icn_search.svg" alt="">
+        </a>
+        <a href="#" class="header__items__user">
+          <img src="./assets/images/icn_person.svg" alt="">
+        </a>
+      </div>
     </div>
   </header>
+
   <main>
-    <img src="./assets/images/loading_spinner.gif" alt="" class="loading">
-    <section id="results">
-      <h2 class="results__title"></h2>
-      <p class="results__subtitle"></p>
-      <div class="result">
+    <div class="loading">
+      <img src="./assets/images/loading_spinner.gif" alt="">
+    </div>
+    
+    <div class="wrapper">
+      <section id="results" class="d-flex align-items-center">
+        <div class="results__container">
+          <h2 class="results__title"></h2>
+          <p class="results__subtitle"></p>
+          <div class="result">
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="search results">
+      <div class="wrapper">
+        <h1 class="search__title">Can't Find The Right Person?</h1>
+        <p class="search__subtitle"><span class="secondary-text">Try Again</span> - Make a new search</p>
+        <form id="search__form" class="d-flex">
+          <div class="form__container d-flex flex-column">
+            <label for="search"></label>
+            <input type="text" name="search" id="form__input" placeholder="EMAIL">
+            <div>
+              <p class="form__error">Please add a valid email address</p>
+            </div>
+          </div>
+          <button id="form__send" class="btn-search">GO!</button>
+        </form>
+        <div class="d-flex align-items-center search__footer">
+          <div>
+            <img src="./assets/images/lock.svg" alt="">
+          </div>
+          <p class="secondary-text">Enter Any Email Adress. They won't be notified.</p>
+        </div>
       </div>
     </section>
-    <section class="search">
-
-    </section>
   </main>
-  <footer>
 
+  <footer class="d-flex justify-content-between align-items-center">
+    <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    <p class="footer__links"><a href="#">Terms</a> | <a href="#">Privacy</a></p>
   </footer>
+
   <script src="./assets/js/result.js"></script>
+  <script src="./assets/js/search.js"></script>
 </body>
 </html>
