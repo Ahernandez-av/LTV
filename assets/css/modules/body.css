@@ -1,6 +1,6 @@
-/* BODY */
-
 .body {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#E6E6E6), to(#FFFFFF));
+  background-image: -o-linear-gradient(bottom, #E6E6E6 0%, #FFFFFF 100%);
   background-image: linear-gradient(0deg, #E6E6E6 0%, #FFFFFF 100%);
 }
 

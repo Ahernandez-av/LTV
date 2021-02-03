@@ -1,4 +1,3 @@
-/* BASE STYLES */
 html {
 	font-size: 10px;
 }
@@ -68,9 +67,15 @@ a {
 	width: 9rem;
 	background-color: #004a80;
 	border-radius: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .secondary-text {
@@ -79,8 +84,10 @@ a {
 }
 
 .btn-search {
+	background-image: -o-linear-gradient(225deg, #f2da56 0%, #f6bc25 100%);
 	background-image: linear-gradient(225deg, #f2da56 0%, #f6bc25 100%);
-	box-shadow: 0 3px 0 0 #a6953b, inset 0 1px 0 0 #ffffff;
+	-webkit-box-shadow: 0 3px 0 0 #a6953b, inset 0 1px 0 0 #ffffff;
+	        box-shadow: 0 3px 0 0 #a6953b, inset 0 1px 0 0 #ffffff;
 	color: #004a80;
 	font-size: 2.4rem;
 	font-weight: 700;
@@ -88,19 +95,32 @@ a {
 
 .btn-search:hover {
 	background: #f2da56;
-	box-shadow: 0 3px 0 0 #a6953b, inset 0 1px 0 0 #ffffff;
+	-webkit-box-shadow: 0 3px 0 0 #a6953b, inset 0 1px 0 0 #ffffff;
+	        box-shadow: 0 3px 0 0 #a6953b, inset 0 1px 0 0 #ffffff;
 }
 
 .btn-search:active {
 	background: #f6bc25;
-	box-shadow: 0 3px 0 0 #a6953b, inset 0 1px 0 0 #ffffff;
+	-webkit-box-shadow: 0 3px 0 0 #a6953b, inset 0 1px 0 0 #ffffff;
+	        box-shadow: 0 3px 0 0 #a6953b, inset 0 1px 0 0 #ffffff;
 }
 
 .loading {
 	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 /* MEDIA QUERIES */
